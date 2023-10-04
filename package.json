@@ -4,7 +4,8 @@
   "description": "Code4Cause Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,10 @@
   },
   "homepage": "https://github.com/huhrsh/Code4Cause#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
     "mongoose": "^7.5.3"
   }
 }
