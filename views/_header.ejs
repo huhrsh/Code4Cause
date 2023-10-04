@@ -1,7 +1,21 @@
 <link rel="stylesheet" href="/CSS/header.css">
 
 <header>
-    Header | <%=title%>
+    <!-- <img src="https://cdn-icons-png.flaticon.com/64/10130/10130571.png" alt="logo"> -->
+    <h1 class="header-heading">Code4Cause <span class="header-heading-span">| <%=title%></span> </h1>
     
-    <button class="header-button">User</button>
+
+    <% if(locals.user) { %>
+        <button class="header-button"><%= user.name %></button>
+        <button class="header-button">
+            <a href="/users/sign-out">Sign Out</a>
+        </button>
+    <% } else { %>  
+        <button class="header-button">
+            <a href="/users/sign-in">sign in</a>
+        </button>
+        <button class="header-button">
+            <a href="/users/sign-up">sign up</a>
+        </button>
+    <% } %> 
 </header>
