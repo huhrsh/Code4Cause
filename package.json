@@ -1,0 +1,24 @@
+{
+  "name": "code4cause-project",
+  "version": "1.0.0",
+  "description": "Code4Cause Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhrsh/Code4Cause.git"
+  },
+  "author": "BroCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huhrsh/Code4Cause/issues"
+  },
+  "homepage": "https://github.com/huhrsh/Code4Cause#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3"
+  }
+}
